@@ -1,0 +1,25 @@
+<style>
+            form {
+    width:500px;
+    margin:50px auto;
+    background-color: #ffffff;
+}
+.search {
+    color: #ffffff;
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #FFFFFF;
+}
+.button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #FFFFFF;
+    background-color:#000000;
+    color:#fafafa;
+}
+.button:hover  {
+    background-color:#000000;
+    color:#FFFFFF;
+}
+        </style>
