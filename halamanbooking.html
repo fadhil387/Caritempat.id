@@ -6,10 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CariTempat</title>
-        <link rel="icon" href="dist/images/logo.png" type="image/x-icon">
+        <link rel="icon" href="dist/images/icon.png" type="image/x-icon">
         <!--Plugin CSS-->
         <link href="dist/css/plugins.min.css" rel="stylesheet">
          <link href="dist/css/cari.css" rel="stylesheet">
+          <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!--main Css-->
         <link href="dist/css/main.min.css" rel="stylesheet"> 
     </head>
@@ -18,7 +21,7 @@
      <!-- header -->
         <div id="header-fix" class="header fixed-top">
             <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-light py-lg-0 py-4">
-                <a class="navbar-brand mr-4 mr-md-5" href="index.html"><img src="dist/images/logonav.png" width="190" height="38"></a>
+                <a class="navbar-brand mr-4 mr-md-5" href="index.html"><img src="dist/images/logonav.png" width="190" height="34"></a>
                 <div id="dl-menu" class="dl-menuwrapper d-block d-lg-none float-right">
                     <button>Open Menu</button>
                     <ul class="dl-menu">
@@ -141,8 +144,6 @@
                     <div class="col-12 col-xl-9 align-self-center order-xl-2 order-1 text-xl-right text-center ">
                         <div class="cover-btn mt-4 mt-xl-0 lis-f-14">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item py-2 mr-0"><a href="#" class="lis-light rounded-left"><i class="fa fa-envelope-o pr-1"></i> Add review</a> </li>
-                                <li class="list-inline-item py-2 mr-0"><a href="#" class="lis-light"><i class="fa fa-heart-o pr-1"></i> Bookmark</a> </li>
                                 <li class="list-inline-item py-2 mr-0"><a href="#" class="lis-light"><i class="fa fa-share pr-1"></i> Share</a> </li>
                                 <li class="list-inline-item py-2 mr-0"><a href="#" class="lis-light rounded-right"><i class="fa fa-ellipsis-h"></i></a> </li>
                             </ul>
@@ -223,13 +224,16 @@
                                   <h6 class="lis-font-weight-500"><i class="fa fa-align-left pr-2 lis-f-14"></i> Deskripsi Gedung</h6>
                                 <div class="card lis-brd-light wow fadeInUp">
                                     <div class="card-body p-4">
+                                        <video width="320" height="200" controls>
+                                        <source src="dist/images/gedung1.mp4" type="video/mp4">
+                                        </video>        
                                         <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
                                         <p class="pt-3 mb-0">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Maecenas nec odio et ante tincidunt tempus.</p>
                                     </div>
                                 </div>
                           </div>
                             <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews">
-                                <h6 class="lis-font-weight-500"><i class="fa fa-signal pr-2 lis-f-14"></i> Reviews</h6>
+                                <h6 class="lis-font-weight-500"><i class="fa fa-comment-o pr-2 lis-f-14"></i> Reviews</h6>
                                 <div class="card lis-brd-light wow fadeInUp mb-2">
                                     <div class="card-body p-4">
                                         <div class="media d-block d-sm-flex text-center text-sm-left">
@@ -355,7 +359,7 @@
                             <div class="card-body p-4">
                                 <div class="media d-block d-xl-flex text-white">    
                                     <div class="media-body align-self-center">
-                                        <p class="mb-0"> <strong></strong> <strong class="h5">IDR 18.000.000.00-</strong></p>
+                                        <p class="mb-0"> <strong></strong> <strong class="h5">IDR 18.000.000</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -379,6 +383,29 @@
                                                     <li><i class="fa fa-car pr-2 lis-primary"></i> Parkiran </li>
                                                 </ul>
                                             </div>
+                                            <br>
+                                            <br>
+                                            
+                                            <div class="card">
+                                            
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <center>
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h3>
+        Fasilitas Tambahan
+      </h3>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+    <textarea  class="form-control border-top-1 border-left-1 border-right- rounded-0"></textarea><br> <a href="#" class="btn btn-primary btn-xs mt-3">Kirim</a>
+      </div>
+    </div>
+  </div>
+</center>
+  </a>
                                         </div>
                                     </div>
                                 </div>  
@@ -397,21 +424,20 @@
                         <div class="card lis-brd-light wow fadeInUp mb-4">
                             <div class="card-body p-4">
                                 <ul class="list-unstyled mb-0 lis-line-height-3_5">
-                                     <input type="date" class="border border-top-0 border-left-0 border-right-0 lis-brd-light"> <i class="fa fa-calendar pr-2"></i> <span class="float-right"></span></li>
-                                    <li class="border border-top-0 border-left-0 border-right-0 lis-brd-light"><i class="fa fa-map-marker pr-2"></i>Jl. Gatot Subroto No.19, Baros, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40521<span class="float-right"></span></li>
+                                     <input type="text" id="datepicker" class="border border-top-0 border-left-0 border-right-0 lis-brd-light"> <i class="fa fa-calendar pr-2"></i> <span class="float-right"></span></li>
+                                     <script>
+                                         $(function() {
+                                            $( "#datepicker" ).datepicker();
+                                         });
+                                     </script>
+                                    <li class="border border-top-0 border-left-0 border-right-0 lis-brd-light"><i class="fa fa-map-marker pr-2"></i>Jl. Gatot Subroto No.19, Baros, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40521<span class="float-right"></span>
+                                        </li> 
+                                         <a href="#" class="google-map"></i><span> Buka lokasi Gedung</span></a>  
                                 </ul>
                             </div>
                         </div>
-                       <div class="card lis-bg-primary lis-brd-primary mb-4">
-                            <div class="card-body p-4">
-                                <div class="media d-block d-xl-flex text-white">    
-                                    <div class="media-body align-self-center">
-                                        <a href="detail_informasi.html">
-                                       <center><p class="mb-0"> <strong></strong> <strong class="h5">BOOKING NOW!!!</strong></p></center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-12 col-md-15 pt-8"><center> <a href="detail_informasi.html" class="btn btn-primary btn-lg btn-block"> BOOKING NOW!!! </a></center> </div>
+                         </div>
                     </a>
                         <br>
                         </div>
@@ -675,10 +701,11 @@
                                 </ul>
                                 <div class="media pt-2">
                                     <div class="d-flex">
-                                        <h5 class="lis-primary mb-0"><span class="lis-f-14 lis-dark">Price:</span> 25,000,000,00-<small class="lis-light">/day</small></h5>
+                                        <h5 class="lis-primary mb-0"><span class="lis-f-14 lis-dark">Price:</span> 25.000.000<small class="lis-light">/day</small></h5>
                                     </div>
                                     <div class="media-body align-self-center text-right">
                                         <a href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></a>
+                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 5.0</A>
                                     </div>                                    
                                 </div>
                             </div>
@@ -702,10 +729,11 @@
                                 </ul>
                                 <div class="media pt-2">
                                     <div class="d-flex">
-                                        <h5 class="lis-primary mb-0"><span class="lis-f-14 lis-dark">Price:</span> 15,000,000,00- <small class="lis-light">/day</small> </h5>
+                                        <h5 class="lis-primary mb-0"><span class="lis-f-14 lis-dark">Price:</span> 15.000.000 <small class="lis-light">/day</small> </h5>
                                     </div>
                                     <div class="media-body align-self-center text-right">
                                         <a href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></a>
+                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 5.0</A>
                                     </div>                                    
                                 </div>
                             </div>
@@ -729,9 +757,12 @@
                                 </ul>
                                 <div class="media pt-2">
                                     <div class="d-flex">
-                                        <h5 class="lis-primary mb-0"><span class="lis-f-14 lis-dark">Price:</span> 18,000,000,00- <small class="lis-light">/day</small> </h5>
+                                        <h5 class="lis-primary mb-0"><span class="lis-f-14 lis-dark">Price:</span> 18.000.000 <small class="lis-light">/day</small> </h5>
                                     </div>
-                                    
+                                     <div class="media-body align-self-center text-right">
+                                        <a href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></a>
+                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 5.0</A>
+                                    </div>   
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CariTempat</title>
-        <link rel="icon" href="dist/images/logo.png" type="image/x-icon">
+        <link rel="icon" href="dist/images/icon.png" type="image/x-icon">
         <!--Plugin CSS-->
         <link href="dist/css/plugins.min.css" rel="stylesheet">
          <link href="dist/css/cari.css" rel="stylesheet">
@@ -18,7 +18,7 @@
         <!-- header -->
         <div id="header-fix" class="header fixed-top">
             <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-light py-lg-0 py-4">
-                <a class="navbar-brand mr-4 mr-md-5" href="index.html"><img src="dist/images/logonav.png" width="190" height="38"></a>
+                <a class="navbar-brand mr-4 mr-md-5" href="index.html"><img src="dist/images/logonav.png" width="190" height="34"></a>
                 <div id="dl-menu" class="dl-menuwrapper d-block d-lg-none float-right">
                     <button>Open Menu</button>
                     <ul class="dl-menu">
@@ -128,7 +128,7 @@
         <section class="pb-0" style="padding-top: 94px;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-xl-4 py-5 order-xl-1 order-2 left-sidebar z-index-99">
+                    <div class="col-12 col-xl-4 py-4 order-xl-1 order-2 left-sidebar z-index-99">
                         <div class="lis-relative">
                             <div class="form-group lis-relative">
                                 <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="Cari Lokasi/Nama gedung?">
@@ -139,17 +139,50 @@
                                 <div class="lis-search"> <i class="fa fa-calendar lis-primary lis-left-0"></i> </div>
                                 <div class="lis-search"> <a href="#" class="lis-light"></i></a> </div>
                             </div>
-                            <div class="form-group lis-relative">
-                                <select class="style-select form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
-                                    <option> Semua kategori</option>
-                                                <option>Wedding</option>
-                                                <option>Even Sekolah</option>
-                                                <option>Even keluarga</option>
-                                                <option>Ruang Meeting</option>
-                                                <option>Work shope</option>
-                                                <option>Work space</option>
-                                </select>
-                                <div class="lis-search"> <i class="fa fa-tags lis-primary lis-left-0"></i> </div>
+                            <p class="lis-dark">Capacity Range</p>
+                            <div class="row mt-3">
+                                <div class="col-12 col-xl-6">
+                                <div class="buttons" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> 01-05 Pax
+  </label>
+  <br>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> 11-20 Pax
+  </label>
+  <br>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> 31-50 Pax
+  </label>
+
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> 06-10 Pax
+  </label>
+  <br>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> 21-30 Pax
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> 51-200 Pax
+  </label>
+  <br>
+</div>
+   </div>
+                            </div>
+                            <p class="lis-dark">Time</p>
+                            <div class="row mt-3">
+                                <div class="col-12 col-xl-6">
+                                    <label id="checkbox1" class="custom-control custom-checkbox d-block">
+                                        <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description"> 6 Jam</span> </label>
+                                    <label id="checkbox5" class="custom-control custom-checkbox d-block">
+                                        <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description"> 12 Jam</span> </label>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <label id="checkbox2" class="custom-control custom-checkbox d-block">
+                                        <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description"> 8 Jam </span> </label>
+                                    <label id="checkbox6" class="custom-control custom-checkbox d-block">
+                                        <input type="checkbox" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description"> 24 Jam </span> </label>
+                                </div>
                             </div>
                             <div class="col-12 col-md-12 pt-4"><center> <a href="#" class="btn btn-primary btn-default"><i class="fa fa-search pr-2"></i> MENGUBAH PENCARIAN </a></center> </div>
                             <br>        
@@ -203,25 +236,9 @@
                         <section class="py-5 px-3">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-6 align-self-center">
-                                        <p>Showing results 1 - 9</p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="float-sm-right shorting">
-                                            <div class="form-group lis-relative">
-                                                <select class="form-control border-0 pl-4">
-                                                    <option selected> Newest Listing</option>
-                                                    <option>Default</option>
-                                                    <option>Newest</option>
-                                                    <option>Top Rated</option>
-                                                </select>
-                                                <div class="lis-search"> <i class="fa fa-sliders lis-primary lis-left-0"></i> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    
                                 <div class="row">
-                                   <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                                   <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
                                         <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
                                             <a href="halamanbooking.html">
                                                 <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
@@ -235,7 +252,8 @@
                                                         <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
                                                 </div>
                                                 <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                     <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
                                                     <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
                                                 </ul>
                                                     <div class="float-none float-lg-right mt-1">
@@ -245,7 +263,7 @@
                                                 </div>
                                         </div>
                                     </div>
-                                  <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                                  <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
                                         <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
                                             <a href="halamanbooking.html">
                                                 <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
@@ -259,7 +277,8 @@
                                                         <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
                                                 </div>
                                                 <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
                                                     <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
                                                 </ul>
                                                     <div class="float-none float-lg-right mt-1">
@@ -269,7 +288,132 @@
                                                 </div>
                                         </div>
                                     </div>
-                                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
+                                            <a href="halamanbooking.html">
+                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
+                                                <div class="lis-absolute lis-right-20 lis-top-20">
+                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
+                                                </div>
+                                            </a>
+                                            <div class="card-body pt-0">
+                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                                    <div class="media-body align-self-start mt-2">
+                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
+                                                </div>
+                                                <ul class="list-unstyled my-4 lis-line-height-2">
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
+                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
+                                                </ul>
+                                                    <div class="float-none float-lg-right mt-1">
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
+                                            <a href="halamanbooking.html">
+                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
+                                                <div class="lis-absolute lis-right-20 lis-top-20">
+                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
+                                                </div>
+                                            </a>
+                                            <div class="card-body pt-0">
+                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                                    <div class="media-body align-self-start mt-2">
+                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
+                                                </div>
+                                                <ul class="list-unstyled my-4 lis-line-height-2">
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
+                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
+                                                </ul>
+                                                    <div class="float-none float-lg-right mt-1">
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
+                                            <a href="halamanbooking.html">
+                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
+                                                <div class="lis-absolute lis-right-20 lis-top-20">
+                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
+                                                </div>
+                                            </a>
+                                            <div class="card-body pt-0">
+                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                                    <div class="media-body align-self-start mt-2">
+                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
+                                                </div>
+                                                <ul class="list-unstyled my-4 lis-line-height-2">
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
+                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
+                                                </ul>
+                                                    <div class="float-none float-lg-right mt-1">
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                   <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
+                                            <a href="halamanbooking.html">
+                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
+                                                <div class="lis-absolute lis-right-20 lis-top-20">
+                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
+                                                </div>
+                                            </a>
+                                            <div class="card-body pt-0">
+                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                                    <div class="media-body align-self-start mt-2">
+                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
+                                                </div>
+                                                <ul class="list-unstyled my-4 lis-line-height-2">
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
+                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
+                                                </ul>
+                                                    <div class="float-none float-lg-right mt-1">
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
+                                            <a href="halamanbooking.html">
+                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
+                                                <div class="lis-absolute lis-right-20 lis-top-20">
+                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
+                                                </div>
+                                            </a>
+                                            <div class="card-body pt-0">
+                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                                    <div class="media-body align-self-start mt-2">
+                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.html" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
+                                                </div>
+                                                <ul class="list-unstyled my-4 lis-line-height-2">
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
+                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
+                                                </ul>
+                                                    <div class="float-none float-lg-right mt-1">
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
+                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-4">
                                         <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
                                             <a href="halamanbooking.php">
                                                 <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
@@ -283,7 +427,8 @@
                                                         <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
                                                 </div>
                                                 <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
+                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000</li>
+                                                    <li><i class="fa fa-handshake-o pr-2"></i> Down Payment 30%</li>
                                                     <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
                                                 </ul>
                                                     <div class="float-none float-lg-right mt-1">
@@ -293,150 +438,7 @@
                                                 </div>
                                         </div>
                                     </div>
-                                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
-                                            <a href="halamanbooking.php">
-                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
-                                                <div class="lis-absolute lis-right-20 lis-top-20">
-                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
-                                                </div>
-                                            </a>
-                                            <div class="card-body pt-0">
-                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
-                                                    <div class="media-body align-self-start mt-2">
-                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
-                                                </div>
-                                                <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
-                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
-                                                </ul>
-                                                    <div class="float-none float-lg-right mt-1">
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
-                                            <a href="halamanbooking.php">
-                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
-                                                <div class="lis-absolute lis-right-20 lis-top-20">
-                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
-                                                </div>
-                                            </a>
-                                            <div class="card-body pt-0">
-                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
-                                                    <div class="media-body align-self-start mt-2">
-                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
-                                                </div>
-                                                <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
-                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
-                                                </ul>
-                                                    <div class="float-none float-lg-right mt-1">
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
-                                            <a href="halamanbooking.php">
-                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
-                                                <div class="lis-absolute lis-right-20 lis-top-20">
-                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
-                                                </div>
-                                            </a>
-                                            <div class="card-body pt-0">
-                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
-                                                    <div class="media-body align-self-start mt-2">
-                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
-                                                </div>
-                                                <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
-                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
-                                                </ul>
-                                                    <div class="float-none float-lg-right mt-1">
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
-                                            <a href="halamanbooking.php">
-                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
-                                                <div class="lis-absolute lis-right-20 lis-top-20">
-                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
-                                                </div>
-                                            </a>
-                                            <div class="card-body pt-0">
-                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
-                                                    <div class="media-body align-self-start mt-2">
-                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
-                                                </div>
-                                                <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
-                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
-                                                </ul>
-                                                    <div class="float-none float-lg-right mt-1">
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
-                                            <a href="halamanbooking.php">
-                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
-                                                <div class="lis-absolute lis-right-20 lis-top-20">
-                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
-                                                </div>
-                                            </a>
-                                            <div class="card-body pt-0">
-                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
-                                                    <div class="media-body align-self-start mt-2">
-                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
-                                                </div>
-                                                <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
-                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
-                                                </ul>
-                                                    <div class="float-none float-lg-right mt-1">
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                      <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
-                                        <div class="card lis-brd-light wow fadeInUp text-center text-lg-left">
-                                            <a href="halamanbooking.php">
-                                                <div class="lis-grediant grediant-tb-light2 lis-relative modImage lis-radius rounded-top"> <img src="dist/images/1.jpg" alt="" class="img-fluid rounded-top w-100" /> </div>
-                                                <div class="lis-absolute lis-right-20 lis-top-20">
-                                                    <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
-                                                </div>
-                                            </a>
-                                            <div class="card-body pt-0">
-                                                <div class="media d-block d-lg-flex lis-relative"> <img src="dist/images/gedung1.png" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
-                                                    <div class="media-body align-self-start mt-2">
-                                                        <p class="mb-0 lis-font-weight-600"><A href="halamanbooking.php" class="lis-dark">Vintage Italian Beer Bar & Restaurant</A></p></div>
-                                                </div>
-                                                <ul class="list-unstyled my-4 lis-line-height-2">
-                                                    <li><i class="fa fa-money pr-2"></i> 18.000.000,00-</li>
-                                                    <li><i class="fa fa-map-o pr-2"></i> First Street, New York, USA</li>
-                                                </ul>
-                                                    <div class="float-none float-lg-right mt-1">
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-envelope-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-light lis-f-14"><i class="fa fa-heart-o lis-id-info  lis-rounded-circle-50 text-center"></i></A>
-                                                        <A href="#" class="lis-green-light text-white p-2 lis-rounded-circle-50 lis-f-14"><i class="fa fa-star"></i> 3.0</A> </div>
-                                                </div>
-                                        </div>
-                                    </div>
+                                     
                             
                             <nav>
                             <center>
